@@ -365,64 +365,224 @@ export default [
   },
   {
     path: '/multilevel',
-    name: 'multilevel',
+    name: 'chem_question_bank',
     meta: {
       icon: 'md-menu',
-      title: '多级菜单'
+      title: '化学题库'
     },
     component: Main,
     children: [
       {
-        path: 'level_2_1',
-        name: 'level_2_1',
-        meta: {
-          icon: 'md-funnel',
-          title: '二级-1'
-        },
-        component: () => import('@/view/multilevel/level-2-1.vue')
-      },
-      {
         path: 'level_2_2',
-        name: 'level_2_2',
+        name: 'knowledge_points',
         meta: {
           access: ['super_admin'],
           icon: 'md-funnel',
           showAlways: true,
-          title: '二级-2'
+          title: '知识点'
         },
         component: parentView,
         children: [
           {
-            path: 'level_2_2_1',
-            name: 'level_2_2_1',
+            path: 'level_2_2',
+            name: 'chemical_experiment_basis',
+            meta: {           
+              icon: 'md-funnel',
+              showAlways: true,              
+              title: '化学实验基础'
+            },
+            component: parentView,
+            children: [
+              {
+                path: 'tables_page',
+                name: 'basic_knowledge_of_chemical_experiments',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '化学实验基础知识'
+                },
+                component: () => import('@/view/components/question-tables/tables.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'identify_typical_laboratory_equipment',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '识别典型的实验仪器装置'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'separation_purification_and_inspection_of_substances',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '物质的分离、提纯和检验'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'preparation_collection_and_purification_of_substances',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '物质的制备、收集和净化'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+                                          {
+                path: 'level_2_3',
+                name: 'design_and_evaluation_of_chemical_experiments_experimental_research',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '化学实验的设计与评价，实验研究'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'configuration_solution',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '配置溶液'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'laboratory_method_for_common_gases',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '常见气体的实验室制法'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              },
+              {
+                path: 'level_2_3',
+                name: 'discrimination_of_substances_in_chemical_experiments',
+                meta: {
+                  icon: 'md-funnel',
+                  title: '化学实验中物质的判别'
+                },
+                component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+              }              
+            ]
+          },
+          {
+            path: 'level_2_2_2',
+            name: 'chemical_calculation',
             meta: {
               icon: 'md-funnel',
-              title: '三级'
+              title: '化学计算'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
+          },
+          {
+            path: 'level_2_2_1',
+            name: 'basic_concept_of_chemistry',
+            meta: {
+              icon: 'md-funnel',
+              title: '化学的基本概念'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          },
+          {
+            path: 'level_2_2_1',
+            name: 'structure_and_nature_of_matter',
+            meta: {
+              icon: 'md-funnel',
+              title: '物质的结构与性质'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
           },
           {
             path: 'level_2_2_2',
-            name: 'level_2_2_2',
+            name: 'important_inorganic_matter',
             meta: {
               icon: 'md-funnel',
-              title: '三级'
+              title: '重要的无机物'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
-          }
+          },
+          {
+            path: 'level_2_2_1',
+            name: 'common_organic_matter_and_its_application',
+            meta: {
+              icon: 'md-funnel',
+              title: '常见的有机物及其应用'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          },
+          {
+            path: 'level_2_2_1',
+            name: 'principle_of_chemical_reaction',
+            meta: {
+              icon: 'md-funnel',
+              title: '化学反应原理'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          },
+          {
+            path: 'level_2_2_2',
+            name: 'chemistry_and_life_and_technology',
+            meta: {
+              icon: 'md-funnel',
+              title: '化学与生活和技术'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
+          }, 
+          {
+            path: 'level_2_2_1',
+            name: 'organic_chemistry_foundation',
+            meta: {
+              icon: 'md-funnel',
+              title: '有机化学基础'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          }          
         ]
       },
       {
-        path: 'level_2_3',
-        name: 'level_2_3',
+        path: 'level_2_2',
+        name: 'question_type',
         meta: {
+          access: ['super_admin'],
           icon: 'md-funnel',
-          title: '二级-3'
+          showAlways: true,
+          title: '题型'
         },
-        component: () => import('@/view/multilevel/level-2-3.vue')
-      }
+        component: parentView,
+        children: [
+          {
+            path: 'level_2_2_1',
+            name: 'single_choice',
+            meta: {
+              icon: 'md-funnel',
+              title: '单选题'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          },
+          {
+            path: 'level_2_2_2',
+            name: 'multiple_choices',
+            meta: {
+              icon: 'md-funnel',
+              title: '多选题'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
+          },
+          {
+            path: 'level_2_2_1',
+            name: 'non_choice',
+            meta: {
+              icon: 'md-funnel',
+              title: '非选择题'
+            },
+            component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
+          }          
+        ]
+      },        
     ]
-  },
+  },  
   {
     path: '/argu',
     name: 'argu',
