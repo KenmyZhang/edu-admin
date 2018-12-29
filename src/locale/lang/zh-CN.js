@@ -22,6 +22,10 @@ export default {
   multiple_choices: '多选题',
   non_choice: '非选择题',
   chemical_knowledge_point: '化学知识点',
+  exam_analysis: '考试诊断',
+  monthly_exam: '月考',
+  midterm_exam: '期中考',
+  final_exam: '期末考',
 
   chemical_experiment_basis: '化学实验基础',
   chemical_calculation: '化学计算',

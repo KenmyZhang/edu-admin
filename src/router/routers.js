@@ -364,6 +364,44 @@ export default [
     ]
   },
   {
+    path: '/exam',
+    name: 'exam_analysis',
+    meta: {
+      icon: 'md-menu',
+      title: '考试诊断'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'monthly_exam',
+        name: 'monthly_exam',
+        meta: {
+          icon: 'md-funnel',
+          title: '月考'
+        },
+        component: () => import('@/view/multilevel/level-2-3.vue')
+      },
+      {
+        path: 'midterm_exam',
+        name: 'midterm_exam',
+        meta: {
+          icon: 'md-menu',
+          title: '期中考'
+        },
+        component: () => import('@/view/components/org-tree')
+      },
+      {
+        path: 'final_exam',
+        name: 'final_exam',
+        meta: {
+          icon: 'md-funnel',
+          title: '期末考'
+        },
+        component: () => import('@/view/multilevel/level-2-3.vue')
+      }
+    ]
+  },
+  {
     path: '/chemical_knowledge_point',
     name: 'chemical_knowledge_point',
     meta: {
