@@ -16,10 +16,12 @@ export default {
   multilevel: 'multilevel',
   chem_question_bank: 'Chemistry Question Bank',
   question_type: 'Question Type',
-  knowledge_points: 'Knowledge Points',  
-  single_choice : 'Single Choice',
+  knowledge_points: 'Knowledge Points',
+  single_choice: 'Single Choice',
   multiple_choices: 'Multiple Choices',
   non_choice: 'Non Choice',
+
+  knowledge_point_structure: '知识结构树',
 
   chemical_experiment_basis: '化学实验基础',
   chemical_calculation: '化学计算',
@@ -34,7 +36,7 @@ export default {
   basic_knowledge_of_chemical_experiments: '化学实验基础知识',
   identify_typical_laboratory_equipment: '识别典型的实验仪器装置',
   separation_purification_and_inspection_of_substances: '物质的分离、提纯和检验',
-  preparation_collection_and_purification_of_substances:  '物质的制备、收集和净化',
+  preparation_collection_and_purification_of_substances: '物质的制备、收集和净化',
   design_and_evaluation_of_chemical_experiments_experimental_research: '化学实验的设计与评价，实验研究',
   configuration_solution: '配置溶液',
   laboratory_method_for_common_gases: '常见气体的实验室制法',

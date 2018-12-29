@@ -17,7 +17,8 @@ export default {
   question_type: '題型',
   knowledge_points: '知識點',
   chem_question_bank: '化學題庫',
-  single_choice : '單選題 ',
+  knowledge_point_structure: '知识结构树',
+  single_choice: '單選題 ',
   multiple_choices: '多選題',
   non_choice: '非選擇題',
 
@@ -34,11 +35,11 @@ export default {
   basic_knowledge_of_chemical_experiments: '化学实验基础知识',
   identify_typical_laboratory_equipment: '识别典型的实验仪器装置',
   separation_purification_and_inspection_of_substances: '物质的分离、提纯和检验',
-  preparation_collection_and_purification_of_substances:  '物质的制备、收集和净化',
+  preparation_collection_and_purification_of_substances: '物质的制备、收集和净化',
   design_and_evaluation_of_chemical_experiments_experimental_research: '化学实验的设计与评价，实验研究',
   configuration_solution: '配置溶液',
   laboratory_method_for_common_gases: '常见气体的实验室制法',
-  discrimination_of_substances_in_chemical_experiments: '化学实验中物质的判别',  
+  discrimination_of_substances_in_chemical_experiments: '化学实验中物质的判别',
 
   directive_page: '指令',
   level_1: 'Level-1',

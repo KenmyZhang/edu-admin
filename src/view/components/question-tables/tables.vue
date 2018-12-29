@@ -18,10 +18,10 @@ export default {
   data () {
     return {
       columns: [
-        {title: '序号', key: 'name', sortable: true},
-        {title: '题型', key: 'email', editable: true},
-        {title: '题目', key: 'name', sortable: true},
-        {title: '创建时间', key: 'createTime'},
+        { title: '题型', key: 'type', editable: true },
+        { title: '题目', key: 'question', sortable: true },
+        { title: '知识点', key: 'knowledge_points', sortable: true },
+        { title: '创建时间', key: 'createTime' },
         {
           title: 'Handle',
           key: 'handle',
@@ -61,8 +61,13 @@ export default {
   },
   mounted () {
     getTableData().then(res => {
-      this.tableData = res.data
-    })
+      console.log(this.tableData)
+      this.tableData = res.data.list
+      console.log(this.tableData)
+    }).catch(function (error) {
+      console.log('oh no', error)
+    }
+    )
   }
 }
 </script>

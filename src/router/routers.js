@@ -380,15 +380,36 @@ export default [
           icon: 'md-funnel',
           showAlways: true,
           title: '知识点'
+        }
+      }
+    ]
+  },
+  {
+    path: '/multilevel',
+    name: 'chem_question_bank',
+    meta: {
+      icon: 'md-menu',
+      title: '化学题库'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'level_2_2',
+        name: 'knowledge_points',
+        meta: {
+          access: ['super_admin'],
+          icon: 'md-funnel',
+          showAlways: true,
+          title: '知识点'
         },
         component: parentView,
         children: [
           {
             path: 'level_2_2',
             name: 'chemical_experiment_basis',
-            meta: {           
+            meta: {
               icon: 'md-funnel',
-              showAlways: true,              
+              showAlways: true,
               title: '化学实验基础'
             },
             component: parentView,
@@ -429,7 +450,7 @@ export default [
                 },
                 component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
               },
-                                          {
+              {
                 path: 'level_2_3',
                 name: 'design_and_evaluation_of_chemical_experiments_experimental_research',
                 meta: {
@@ -464,7 +485,7 @@ export default [
                   title: '化学实验中物质的判别'
                 },
                 component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
-              }              
+              }
             ]
           },
           {
@@ -529,7 +550,7 @@ export default [
               title: '化学与生活和技术'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
-          }, 
+          },
           {
             path: 'level_2_2_1',
             name: 'organic_chemistry_foundation',
@@ -538,7 +559,7 @@ export default [
               title: '有机化学基础'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
-          }          
+          }
         ]
       },
       {
@@ -578,11 +599,11 @@ export default [
               title: '非选择题'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
-          }          
+          }
         ]
-      },        
+      }
     ]
-  },  
+  },
   {
     path: '/argu',
     name: 'argu',
