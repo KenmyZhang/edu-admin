@@ -21,6 +21,8 @@ export default {
   multiple_choices: 'Multiple Choices',
   non_choice: 'Non Choice',
 
+  chemical_knowledge_point: '化学知识点',
+
   knowledge_point_structure: '知识结构树',
 
   chemical_experiment_basis: '化学实验基础',

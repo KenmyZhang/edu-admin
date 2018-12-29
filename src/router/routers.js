@@ -364,23 +364,32 @@ export default [
     ]
   },
   {
-    path: '/multilevel',
-    name: 'chem_question_bank',
+    path: '/chemical_knowledge_point',
+    name: 'chemical_knowledge_point',
     meta: {
       icon: 'md-menu',
-      title: '化学题库'
+      title: '化学知识点'
     },
     component: Main,
     children: [
       {
-        path: 'level_2_2',
-        name: 'knowledge_points',
+        path: 'knowledge_point_structure',
+        name: 'knowledge_point_structure',
         meta: {
           access: ['super_admin'],
+          icon: 'md-menu',
+          title: '知识点结构图'
+        },
+        component: () => import('@/view/components/org-tree')
+      },
+      {
+        path: 'level_2_3',
+        name: 'level_2_3',
+        meta: {
           icon: 'md-funnel',
-          showAlways: true,
-          title: '知识点'
-        }
+          title: '二级-3'
+        },
+        component: () => import('@/view/multilevel/level-2-3.vue')
       }
     ]
   },

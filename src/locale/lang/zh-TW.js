@@ -21,6 +21,7 @@ export default {
   single_choice: '單選題 ',
   multiple_choices: '多選題',
   non_choice: '非選擇題',
+  chemical_knowledge_point: '化学知识点',
 
   chemical_experiment_basis: '化学实验基础',
   chemical_calculation: '化学计算',
