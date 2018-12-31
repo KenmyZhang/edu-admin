@@ -21,8 +21,8 @@ export default {
   mounted () {
     const option = {
       title: {
-        text: '历史考试平均分'
-      },      
+        text: '历史化学考试班级平均分'
+      },
       tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -56,9 +56,9 @@ export default {
           name: '运营商/网络服务',
           type: 'line',
           stack: '总量',
-          areaStyle: {normal: {
+          areaStyle: { normal: {
             color: '#2d8cf0'
-          }},
+          } },
           data: [90, 80, 88, 66, 85, 90, 88]
         }
       ]

@@ -25,6 +25,11 @@
         <example style="height: 310px;"/>
       </Card>
     </Row>
+    <Row>
+      <Card shadow>
+        <knowledgePoint style="height: 310px;"/>
+      </Card>
+    </Row>
   </div>
 </template>
 
@@ -33,6 +38,7 @@ import InforCard from '_c/info-card'
 import CountTo from '_c/count-to'
 import { ChartPie, ChartBar } from '_c/charts'
 import Example from './example.vue'
+import KnowledgePoint from './knowledge-point.vue'
 export default {
   name: 'home',
   components: {
@@ -40,7 +46,8 @@ export default {
     CountTo,
     ChartPie,
     ChartBar,
-    Example
+    Example,
+    KnowledgePoint
   },
   data () {
     return {
