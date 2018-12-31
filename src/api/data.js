@@ -38,7 +38,15 @@ export const uploadImg = formData => {
 
 export const getOrgData = () => {
   return axios.request({
-    url: 'get_org_data',
+    url: 'knowledge/point/multi/list?knowledge_id=55cexjwn93bbjxuusf9ctf1c8a',
     method: 'get'
+  })
+}
+
+export const setOrgData = knowledge_point => {
+  return axios.request({
+    url: '/smart-edu-server/knowledge/point',
+    method: 'post',
+    data: knowledge_point
   })
 }

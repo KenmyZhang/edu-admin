@@ -63,7 +63,8 @@ export default {
     getDepartmentData () {
       getOrgData().then(res => {
         const { data } = res
-        this.data = data
+        console.log(data)
+        this.data = data.list
       })
     }
   },
